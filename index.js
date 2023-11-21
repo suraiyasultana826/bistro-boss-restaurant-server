@@ -113,6 +113,7 @@ async function run() {
 
     app.post('/users', async(req, res) => {
       const user = req.body;
+      console.log(user);
       //insert email if user doesn't exists:
       //you can do this many ways(1.email unique, 2.upsert 3. simple checking)
 
